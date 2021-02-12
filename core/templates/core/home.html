@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Qué es</span>
+                <span class="section-heading-lower">DrumML ?</span>
+              </h2>
+              <p class="mb-0">DrumML es una aplicación que permite generar ritmos de batería a través de técnicas relacionadas con el aprendizaje automático (machine learning). Permite escoger distintas técnicas tales como: Arboles de Decisión, Bosques Aleatorios y Redes Neuronales (MLP, LSTM Y CNN), entrenar a los modelos con sus propios conjuntos de entrenamiento (datasets) permitiendole ajustar los parametros para que juegue y se acerque al aprendizaje automático desde el área de la música.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="page-section clearfix">
+  <div class="container">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/bg2.jpg' %}" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-upper">¿ Cómo utilizar ?</span>
+          <span class="section-heading-lower">Escoge tus ritmos (.mid)</span>
+        </h2>
+        <p class="mb-3">Escoge un modelo a utilizar, carga tus archivos ".mid" y dale al botón COMENZAR. (Agregar la extensión ".rar" al archivo descargado.)  </p>
+        <div class="intro-button mx-auto">
+        <a class="btn btn-primary btn-xl" href="../../static/core/datasets/dataset.rar" download="Datasets">Descargar Datasets</a>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

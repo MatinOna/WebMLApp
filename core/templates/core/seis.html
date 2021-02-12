@@ -1,0 +1,74 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}CNN{% endblock %}
+
+{% block content %}
+
+
+
+    <section class="page-section cta">
+      <div class="container">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Introduzca los parámetros:</span>
+                </h2>
+                  <form action="" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+
+
+                            Datos de entrenamiento (mínimo 3 archivos): <input id="archivoInput" type="file" name="midi" multiple="" onchange="validarExt()" required><br>
+                            <hr>
+                            Número de ritmos a generar: <input type="number" min="0" name="n_song" required><br>
+                            <hr>
+                            División de cada tiempo: <br>
+                            <input type="radio" name="division" value="4" checked> 4 filas<br>
+                            <input type="radio" name="division" value="8"> 8 filas <br>
+                            <input type="radio" name="division" value="16"> 16 filas <br>
+                            <hr>
+                            Dividir al conjunto de entrenamiento:<br>
+                            <input type="radio" name="tipoentrenamiento" value="tiempo" checked> Tiempo  <br>
+                            <input type="radio" name="tipoentrenamiento" value="compas"> Compás <br>
+                            <hr>
+                            Duración del ritmo (120= 1 min): <input type="number" min="0" name="l_song" required><br>
+                            <hr>
+                            Épocas de entrenameinto para CNN: <input type="number" min="0" name="epoch_train" required><br>
+                            <hr>
+                            <input class="btn btn-primary btn-xl" type="submit" value="Comenzar">   
+
+
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section cta">
+      <div class="container">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Resultados:</span>
+                </h2>
+                  {% for key, value in dic.items %}
+                    {% if value %}
+                      <p>Descargar nuevo archivo generado: <a class="site-heading-upper text-primary mb-3" href="{{value}}">{{ value}}</a></p>
+                    {% endif %}
+                  {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
