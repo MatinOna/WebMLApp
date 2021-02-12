@@ -1,13 +1,13 @@
 # WebMLApp
 Web application to generate drum rhythms through techniques related to machine learning
 
-![alt text](https://github.com/MatinOna/Game-Java-openGL-POO/blob/master/img/2.png)
+![alt text](https://github.com/MatinOna/WebMLApp/blob/main/core/static/core/img/sd.PNG)
 
-![alt text](https://github.com/MatinOna/Game-Java-openGL-POO/blob/master/img/1.png)
+![alt text](https://github.com/MatinOna/WebMLApp/blob/main/core/static/core/img/fdgd.PNG)
 
-![alt text](https://github.com/MatinOna/Game-Java-openGL-POO/blob/master/img/4.png)
+![alt text](https://github.com/MatinOna/WebMLApp/blob/main/core/static/core/img/sdas.PNG)
 
-![alt text](https://github.com/MatinOna/Game-Java-openGL-POO/blob/master/img/5.png)
+![alt text](https://github.com/MatinOna/WebMLApp/blob/main/core/static/core/img/Captura.PNG)
 
 # Video:
-https://www.youtube.com/watch?v=lkWHVqDt_lU&feature=youtu.be
+https://www.youtube.com/watch?v=biFjkKHQsrQ&ab_channel=Mart%C3%ADnO%C3%B1a
